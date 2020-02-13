@@ -1,0 +1,9 @@
+-hosts: win
+ gather_facts: no
+ tasks:
+  -win_ping
+  -win_chocolatey:
+   name:procexp
+   state: present
+   
+		
